@@ -1,0 +1,67 @@
+body {
+    background: #fcfcfc;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', Tahoma, sans-serif;
+    color: #aaa;
+}
+.title {
+    margin-bottom: 0;
+}
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-hider {
+    width: 740px;
+    overflow: hidden;
+    float: left;
+}
+ 
+.carousel-list {    
+    list-style: none;
+    width: 10000px;
+    padding: 0px;
+    position: relative;
+}
+ 
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+ 
+.carousel-element img {
+    max-width: 230px;
+}
+
+.carousel-element p {
+    font-size: 12px;
+   text-align: center;
+}
+ 
+.carousel-arrow-left, .carousel-arrow-right {
+    width: 14px;
+    height: 24px;
+    float: left;
+    display: block;
+    background: url(../img/slider-arrows.png) 100% 0% no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+}
+ 
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    
+}
+ 
+.carousel-arrow-left {
+    margin-right: 15px;
+}
+ 
+.carousel-arrow-right {
+    margin-left: 15px;
+    background: url(../img/slider-arrows.png) 100% 100% no-repeat;
+    background-size: cover;
+}

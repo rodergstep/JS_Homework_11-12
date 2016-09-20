@@ -1,5 +1,11 @@
-/*Carusels*/
-$(document).ready(function() {
+$(function () {
+  $('.carousel-list').CaruselPlugin();
+  });
+
+/*CaruselPlugin*/
+
+(function($) {
+  $.fn.CaruselPlugin = function(){
    var leftUIEl = $('.carousel-arrow-left');
     var rightUIEl = $('.carousel-arrow-right');
     var elementsList = $('.carousel-list');
@@ -23,4 +29,9 @@ $(document).ready(function() {
             elementsList.animate({ left : currentLeftValue + "px"}, 500);
         }        
     });
-});
+
+     return this;
+  };
+})(jQuery);
+
+
